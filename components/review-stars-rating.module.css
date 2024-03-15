@@ -1,0 +1,154 @@
+.wrapperGroup1000008433Child {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  position: absolute;
+  left: 8px;
+  top: 0;
+  transform: scale(1.126);
+}
+.wrapperGroup1000008433 {
+  height: 240px;
+  width: 240px;
+  position: absolute;
+  margin: 0 !important;
+  top: -194px;
+  left: -48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+.frameChild,
+.imageBackgroundChild {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.frameChild {
+  align-self: stretch;
+  max-height: 100%;
+}
+.imageBackgroundChild {
+  height: 540px;
+  flex: 1;
+  border-radius: var(--br-xs);
+  min-width: 351px;
+}
+.loremIpsumDolor {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: 0.17px;
+  line-height: 143%;
+  font-weight: 600;
+  font-family: inherit;
+  padding-right: var(--padding-xl);
+}
+.aliquaUtEnim,
+.blankLine,
+.blankLine1,
+.loremIpsumDolor1,
+.loremIpsumDolor2 {
+  margin: 0;
+}
+.loremIpsumDolorContainer {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-lg);
+}
+.imageBackground,
+.loremIpsumDolorSitParent {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.loremIpsumDolorSitParent {
+  width: 474px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-xl) 0;
+  box-sizing: border-box;
+  gap: var(--gap-5xl);
+  min-width: 474px;
+}
+.imageBackground {
+  width: 1110px;
+  margin: 0 !important;
+  position: absolute;
+  top: 80px;
+  left: 165px;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-77xl);
+  z-index: 1;
+}
+.rectangleParent,
+.reviewQuoteMark,
+.reviewStarsRating {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.rectangleParent {
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+  gap: var(--gap-3xs);
+  z-index: 1;
+}
+.reviewQuoteMark,
+.reviewStarsRating {
+  flex-direction: row;
+}
+.reviewQuoteMark {
+  flex: 1;
+  position: relative;
+}
+.reviewStarsRating {
+  height: 763px;
+  padding: 0 0 var(--padding-44xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-gainsboro-100);
+  font-family: var(--font-montserrat);
+}
+@media screen and (max-width: 1125px) {
+  .loremIpsumDolorSitParent {
+    flex: 1;
+  }
+  .imageBackground {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .loremIpsumDolor {
+    font-size: var(--font-size-7xl);
+    line-height: 37px;
+  }
+  .loremIpsumDolorSitParent {
+    min-width: 100%;
+  }
+  .reviewStarsRating {
+    padding-bottom: var(--padding-22xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .imageBackgroundChild {
+    min-width: 100%;
+  }
+  .loremIpsumDolor {
+    font-size: var(--font-size-lgi);
+    line-height: 27px;
+  }
+  .reviewStarsRating {
+    padding-bottom: var(--padding-8xl);
+    box-sizing: border-box;
+  }
+}

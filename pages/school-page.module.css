@@ -1,0 +1,644 @@
+.nodes {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 73px;
+}
+.frameChild,
+.frameInner,
+.frameItem {
+  position: absolute;
+  margin: 0 !important;
+}
+.frameChild {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-9xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.frameInner,
+.frameItem {
+  z-index: 1;
+}
+.frameItem {
+  width: 36px;
+  height: 38px;
+  top: 147px;
+  right: 458px;
+}
+.frameInner {
+  height: 24px;
+  width: 29px;
+  bottom: -12px;
+  left: 94px;
+  object-fit: contain;
+}
+.washingtonInternationalSchoo {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-base);
+  font-family: var(--font-noto-sans);
+  color: var(--color-gray-600);
+  text-align: left;
+}
+.polygonParent,
+.washingtonInternationalSchooWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.washingtonInternationalSchooWrapper {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-7xs) var(--padding-xs);
+  background-color: var(--color-gray-100);
+  flex: 1;
+  border-radius: var(--br-9xs);
+  white-space: nowrap;
+  z-index: 2;
+}
+.capitalHillClusterSchoolWrapper:hover,
+.washingtonInternationalSchooWrapper:hover {
+  background-color: var(--color-gainsboro-200);
+}
+.polygonParent {
+  align-self: stretch;
+  position: relative;
+}
+.ellipseDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background: linear-gradient(0deg, #04621e, #42e5a1);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.div {
+  position: absolute;
+  top: 1px;
+  left: 7px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 10px;
+  z-index: 3;
+}
+.ellipseParent {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.frameWrapper1 {
+  width: 206px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+}
+.frameDiv {
+  width: 271px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.frameContainer {
+  width: 605px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 100%;
+}
+.frameChild1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background: linear-gradient(0deg, #04621e, #42e5a1);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.div1 {
+  position: absolute;
+  top: 1px;
+  left: 7px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 10px;
+  z-index: 2;
+}
+.ellipseGroup {
+  height: 24px;
+  flex: 1;
+  position: relative;
+}
+.frameWrapper3 {
+  width: 168px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 72px;
+  box-sizing: border-box;
+}
+.polygonIcon {
+  height: 24px;
+  width: 29px;
+  position: absolute;
+  margin: 0 !important;
+  top: -10px;
+  left: 92px;
+  z-index: 1;
+}
+.janneyElementarySchool {
+  flex: 1;
+  position: relative;
+}
+.janneyElementarySchoolWrapper,
+.polygonGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.janneyElementarySchoolWrapper {
+  flex: 1;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-gray-100);
+  padding: var(--padding-7xs) var(--padding-xs);
+  white-space: nowrap;
+  z-index: 2;
+}
+.polygonGroup {
+  align-self: stretch;
+  position: relative;
+  color: var(--color-gray-600);
+}
+.frameParent2,
+.frameWrapper2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.frameParent2 {
+  align-self: stretch;
+  align-items: flex-end;
+  gap: 44px;
+}
+.frameWrapper2 {
+  width: 218px;
+  align-items: flex-start;
+  padding: 0 0 var(--padding-4xs);
+  box-sizing: border-box;
+}
+.frameChild2 {
+  height: 24px;
+  width: 29px;
+  position: absolute;
+  margin: 0 !important;
+  right: 93px;
+  bottom: -12px;
+  object-fit: contain;
+  z-index: 1;
+}
+.capitalHillCluster {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-base);
+  font-family: var(--font-noto-sans);
+  color: var(--color-gray-600);
+  text-align: left;
+}
+.capitalHillClusterSchoolWrapper,
+.polygonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.capitalHillClusterSchoolWrapper {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-7xs) var(--padding-xs);
+  background-color: var(--color-gray-100);
+  flex: 1;
+  border-radius: var(--br-9xs);
+  white-space: nowrap;
+  z-index: 2;
+}
+.polygonContainer {
+  align-self: stretch;
+  position: relative;
+}
+.schoollocationChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background: linear-gradient(0deg, #04621e, #42e5a1);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.groupIcon {
+  height: 38px;
+  width: 36px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: -28px;
+  left: -33px;
+  z-index: 1;
+}
+.div2 {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 19px;
+  z-index: 3;
+}
+.frameParent4 {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.schoollocation {
+  height: 24px;
+  flex: 1;
+  position: relative;
+}
+.schoollocationWrapper {
+  width: 118px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-28xl);
+  box-sizing: border-box;
+}
+.frameParent1,
+.frameParent3 {
+  display: flex;
+  align-items: flex-end;
+}
+.frameParent3 {
+  width: 216px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+}
+.frameParent1 {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.frameChild3 {
+  width: 36px;
+  height: 38px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: 175px;
+  left: 255px;
+  z-index: 2;
+}
+.rectangleParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 95px 181px var(--padding-101xl) 164px;
+  box-sizing: border-box;
+  position: relative;
+  gap: 136px;
+  max-width: 100%;
+}
+.ulocationPointIcon {
+  height: 36px;
+  width: 36px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.schools {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 59px;
+}
+.schoolsWrapper,
+.ulocationPointParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.schoolsWrapper {
+  flex-direction: column;
+  padding: 7px 0 0;
+}
+.ulocationPointParent {
+  height: 36px;
+  flex-direction: row;
+  gap: var(--gap-5xs);
+}
+.frameChild4 {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  border-radius: 50%;
+  background: linear-gradient(0deg, #04621e, #42e5a1);
+}
+.numberOfNodes {
+  align-self: stretch;
+  position: relative;
+  font-weight: 500;
+}
+.numberOfNodesWrapper {
+  flex: 1;
+  flex-direction: column;
+  padding: 5px 0 0;
+}
+.ellipseContainer,
+.numberOfNodesWrapper,
+.readmorebuttonInner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.ellipseContainer {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-5xs);
+}
+.readmorebuttonInner {
+  width: 174px;
+  flex-direction: column;
+  padding: var(--padding-11xs) 0 0;
+  box-sizing: border-box;
+}
+.readmorebutton {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: var(--gap-xl);
+}
+.frameGroup,
+.readmorebuttonWrapper {
+  justify-content: flex-start;
+  box-sizing: border-box;
+  font-size: var(--font-size-base);
+  font-family: var(--font-noto-sans);
+}
+.readmorebuttonWrapper {
+  width: 499px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 var(--padding-15xl);
+  max-width: 100%;
+  text-align: left;
+  color: var(--color-gainsboro-100);
+}
+.frameGroup {
+  align-self: stretch;
+  border-radius: var(--br-xl);
+  background: linear-gradient(
+    164.43deg,
+    rgba(31, 53, 75, 0.7),
+    rgba(8, 13, 18, 0.7)
+  );
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-5xl);
+  gap: 29px;
+  color: var(--color-white);
+}
+.frameGroup,
+.frameWrapper,
+.nodesParent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.nodesParent {
+  width: 1108px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.frameWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-3xl) 58px var(--padding-xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  color: var(--color-whitesmoke-100);
+  font-family: var(--font-montserrat);
+}
+.divider {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  background-color: var(--color-whitesmoke-200);
+}
+.footerLink,
+.footerLink1,
+.footerLink2,
+.footerText {
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+}
+.footerText {
+  flex: 1;
+  min-width: 261px;
+  max-width: 100%;
+}
+.footerLink,
+.footerLink1,
+.footerLink2 {
+  min-width: 47px;
+}
+.footerLink1,
+.footerLink2 {
+  flex: 1;
+  min-width: 54px;
+}
+.footerLink2 {
+  min-width: 59px;
+}
+.footerLinkParent,
+.footerTextParent {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.footerLinkParent {
+  width: 192px;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap-base);
+}
+.footerTextParent {
+  align-self: stretch;
+  flex-wrap: wrap;
+  gap: var(--gap-13xl);
+}
+.dividerParent,
+.footerTextParent,
+.frameWrapper4 {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.dividerParent {
+  width: 1216px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+}
+.frameWrapper4 {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+}
+.frameParent,
+.readMore {
+  flex-shrink: 0;
+  
+}
+.frameParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-27xl);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-darkgray-200);
+  font-family: var(--font-noto-sans);
+}
+.readMore {
+  height: 17px;
+  width: 350px;
+  position: relative;
+  text-decoration: underline;
+  font-weight: 600;
+  display: inline-block;
+}
+.readMoreWrapper,
+.schoolPage {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.readMoreWrapper {
+  width: 720px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.schoolPage {
+  width: 100%;
+  height: 1016px;
+  position: relative;
+  background-color: var(--color-gray-700);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-32xl);
+  gap: var(--gap-3023xl);
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--text-sm-regular-size);
+  color: var(--color-white);
+  font-family: var(--font-montserrat);
+}
+@media screen and (max-width: 1050px) {
+  .rectangleParent {
+    gap: 68px 136px;
+    padding-left: 82px;
+    padding-right: 90px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .frameWrapper {
+    padding-bottom: 38px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 725px) {
+  .frameParent1 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .rectangleParent {
+    gap: 34px 136px;
+    padding: var(--padding-43xl) 45px 78px var(--padding-22xl);
+    box-sizing: border-box;
+  }
+  .frameGroup {
+    padding-top: var(--padding-xl);
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .footerTextParent {
+    gap: var(--gap-base);
+  }
+  .dividerParent {
+    gap: 16px 32px;
+  }
+  .frameParent {
+    gap: 23px 46px;
+  }
+  .schoolPage {
+    height: auto;
+    gap: 1521px 3042px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .nodes {
+    font-size: var(--font-size-lg);
+  }
+  .rectangleParent {
+    gap: 17px 136px;
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .readmorebutton {
+    flex-wrap: wrap;
+  }
+  .schoolPage {
+    gap: 760px 3042px;
+  }
+}

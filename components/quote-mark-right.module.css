@@ -1,0 +1,183 @@
+.loremIpsumDolor {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: 0.17px;
+  line-height: 143%;
+  font-weight: 600;
+  font-family: inherit;
+  z-index: 1;
+}
+.loremIpsumDolor1 {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+}
+.backgroundGradient {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-4xl) 0 var(--padding-4xl-5);
+  box-sizing: border-box;
+  font-size: var(--font-size-lg);
+}
+.backgroundGradient,
+.reviewsContainer,
+.subtitleArea {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.subtitleArea {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-base);
+}
+.reviewsContainer {
+  width: 980px;
+  flex-direction: row;
+  padding: 0 var(--padding-52xl);
+  box-sizing: border-box;
+}
+.labelField,
+.logoContainerChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.logoContainerChild {
+  margin: 0 !important;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--br-xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.labelField {
+  border-radius: 50%;
+  background-color: var(--color-gray-1400);
+}
+.uplayIcon {
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  object-fit: cover;
+  z-index: 1;
+}
+.baseButton {
+  height: 80px;
+  flex: 1;
+  position: relative;
+}
+.baseButtonWrapper,
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  z-index: 1;
+}
+.baseButtonWrapper {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 80px;
+  justify-content: flex-start;
+}
+.logoContainer {
+  align-self: stretch;
+  justify-content: center;
+  padding: var(--padding-201xl) var(--padding-xl);
+  position: relative;
+  gap: var(--gap-3xs);
+  flex-shrink: 0;
+  
+}
+.logoContainerWrapper {
+  height: 581px;
+  width: 980px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frameChild {
+  height: 394px;
+  width: 342.2px;
+  position: relative;
+  object-fit: contain;
+  flex-shrink: 0;
+  
+}
+.frameParent,
+.quoteMarkRight {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frameParent {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: var(--gap-58xl);
+}
+.quoteMarkRight {
+  width: 1230px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 0 var(--padding-xl);
+  box-sizing: border-box;
+  gap: var(--gap-45xl);
+  text-align: center;
+  font-size: var(--font-size-9xl);
+  color: var(--color-gainsboro-100);
+  font-family: var(--font-montserrat);
+}
+@media screen and (max-width: 1350px) {
+  .frameParent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .reviewsContainer {
+    padding-left: var(--padding-16xl);
+    padding-right: var(--padding-16xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 800px) {
+  .logoContainer {
+    padding-top: var(--padding-124xl);
+    padding-bottom: var(--padding-124xl);
+    box-sizing: border-box;
+  }
+  .frameParent {
+    gap: 77px 38px;
+  }
+  .quoteMarkRight {
+    gap: 32px 64px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .loremIpsumDolor {
+    font-size: var(--font-size-3xl);
+    line-height: 32px;
+  }
+  .frameParent {
+    gap: 77px 19px;
+  }
+  .quoteMarkRight {
+    gap: 16px 64px;
+  }
+}

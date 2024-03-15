@@ -1,0 +1,104 @@
+.h1 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 84px;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 60px;
+}
+.emailFieldChild {
+  height: 23.2px;
+  width: 167.9px;
+  position: relative;
+}
+.emailField {
+  height: 84px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-mid);
+}
+.aliquaUtEnim,
+.blankLine,
+.loremIpsumDolor {
+  margin: 0;
+}
+.loremIpsumDolorContainer {
+  align-self: stretch;
+  height: 262px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.alexHales {
+  margin: 0;
+  position: relative;
+  font-size: var(--typography-h5-size);
+  line-height: 30px;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--color-steelblue);
+}
+.inputLabel {
+  align-self: stretch;
+  font-size: var(--font-size-lg);
+  color: var(--color-gainsboro-100);
+  font-family: var(--font-montserrat);
+}
+.buttonBaseInner,
+.emailFieldParent,
+.inputLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.emailFieldParent {
+  align-self: stretch;
+}
+.buttonBaseInner {
+  flex: 1;
+  border-radius: var(--br-xl);
+  background: linear-gradient(
+    164.43deg,
+    rgba(31, 53, 75, 0.7),
+    rgba(0, 0, 0, 0.7)
+  );
+  overflow: hidden;
+  padding: var(--padding-3xl) var(--padding-25xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-121xl);
+  color: var(--color-steelblue);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 800px) {
+  .h1 {
+    font-size: var(--font-size-37xl);
+    line-height: 75px;
+  }
+  .buttonBaseInner {
+    padding-left: var(--padding-3xl);
+    padding-right: var(--padding-3xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .h1 {
+    font-size: var(--font-size-16xl);
+    line-height: 50px;
+  }
+  .alexHales {
+    font-size: var(--font-size-lgi);
+    line-height: 24px;
+  }
+  .buttonBaseInner {
+    padding-top: var(--padding-xl);
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

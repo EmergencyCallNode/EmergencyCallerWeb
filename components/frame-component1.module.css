@@ -1,0 +1,410 @@
+.logo21 {
+  width: 68px;
+  height: 95px;
+  position: relative;
+  object-fit: cover;
+  z-index: 2;
+}
+.loremIpsumDolor,
+.loremIpsumDolor1 {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.17px;
+  line-height: 143%;
+}
+.loremIpsumDolor {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.loremIpsumDolor1 {
+  font-size: var(--font-size-lg);
+  font-weight: 400;
+}
+.cardHeaderInstance {
+  width: 445px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xl) 0;
+  box-sizing: border-box;
+  gap: var(--gap-base);
+  min-width: 445px;
+  max-width: 100%;
+}
+.header,
+.subheader {
+  align-self: stretch;
+  position: relative;
+}
+.header {
+  margin: 0;
+  font-size: inherit;
+  line-height: 133.4%;
+  font-weight: 400;
+  font-family: inherit;
+  white-space: nowrap;
+}
+.subheader {
+  font-size: var(--text-sm-regular-size);
+  letter-spacing: 0.17px;
+  line-height: 143%;
+  color: var(--color-darkgray-100);
+}
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.starsharpIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.icon {
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-9xs);
+  box-sizing: border-box;
+}
+.cardheader,
+.content1,
+.iconbutton {
+  align-items: center;
+  box-sizing: border-box;
+}
+.iconbutton {
+  height: 48px;
+  width: 48px;
+  border-radius: var(--br-81xl);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--padding-5xs);
+}
+.cardheader,
+.content1 {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.cardheader {
+  align-self: stretch;
+  display: flex;
+  padding: var(--padding-base);
+  max-width: 100%;
+}
+.content1 {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  height: 56px;
+  overflow: hidden;
+  flex-shrink: 0;
+  padding: var(--padding-base) 0;
+  font-family: var(--input-helper);
+  font-size: var(--font-size-base);
+  color: var(--color-gray-1400);
+  min-width: 250px;
+  min-height: 24px;
+}
+.content1,
+.helperText,
+.input {
+  align-self: stretch;
+  display: flex;
+}
+.input {
+  border-radius: var(--br-5xs);
+  border: 1px solid var(--color-gray-1300);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-2xs);
+}
+.helperText {
+  height: 20px;
+  position: relative;
+  font-size: var(--input-helper-size);
+  letter-spacing: 0.4px;
+  line-height: 166%;
+  font-family: var(--input-helper);
+  color: var(--text-secondary);
+  text-align: left;
+  align-items: center;
+}
+.formhelpertext {
+  width: 220px;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-10xs) var(--padding-sm) 0;
+  box-sizing: border-box;
+}
+.content2,
+.formhelpertext,
+.textfield {
+  justify-content: flex-start;
+}
+.textfield {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.content2 {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  height: 56px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-base) 0;
+  box-sizing: border-box;
+  font-family: var(--input-helper);
+  font-size: var(--font-size-base);
+  color: var(--color-gray-1400);
+  min-width: 250px;
+  min-height: 24px;
+}
+.content2,
+.helperText1,
+.input1 {
+  align-self: stretch;
+  display: flex;
+}
+.input1 {
+  border-radius: var(--br-5xs);
+  border: 1px solid var(--color-gray-1300);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-2xs);
+}
+.helperText1 {
+  height: 20px;
+  position: relative;
+  font-size: var(--input-helper-size);
+  letter-spacing: 0.4px;
+  line-height: 166%;
+  font-family: var(--input-helper);
+  color: var(--text-secondary);
+  text-align: left;
+  align-items: center;
+}
+.form,
+.formhelpertext1,
+.textfield1 {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.formhelpertext1 {
+  width: 220px;
+  display: none;
+  padding: var(--padding-10xs) var(--padding-sm) 0;
+  box-sizing: border-box;
+}
+.form,
+.textfield1 {
+  align-self: stretch;
+  display: flex;
+}
+.textfield1 {
+  border-radius: var(--br-5xs);
+}
+.form {
+  gap: var(--gap-base);
+}
+.maskedIcon {
+  height: 22px;
+  width: 18px;
+  position: relative;
+  display: none;
+}
+.logIn {
+  position: relative;
+  font-size: var(--font-size-mini);
+  letter-spacing: 0.46px;
+  line-height: 26px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: var(--input-helper);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  min-width: 45px;
+  white-space: nowrap;
+}
+.maskedIcon1 {
+  height: 22px;
+  width: 18px;
+  position: relative;
+  display: none;
+}
+.base,
+.button {
+  align-items: center;
+  justify-content: center;
+}
+.base {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-5xs);
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs) var(--padding-xl);
+  background-color: transparent;
+  border-radius: var(--br-5xs);
+  background: linear-gradient(0deg, #0e14ad, #5caff2);
+  box-shadow: var(--elevation-2);
+  overflow: hidden;
+}
+.button,
+.cardContent,
+.container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+.cardContent {
+  margin: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-base);
+  gap: var(--gap-base);
+}
+.container {
+  border-radius: var(--br-xl);
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+.cardHeaderInstanceParent,
+.formField {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.formField {
+  flex: 1;
+  border-radius: var(--br-xl);
+  background: linear-gradient(
+    164.43deg,
+    rgba(31, 53, 75, 0.7),
+    rgba(0, 0, 0, 0.7)
+  );
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-33xl) var(--padding-28xl);
+  box-sizing: border-box;
+  min-width: 420px;
+  font-size: var(--typography-h5-size);
+  font-family: var(--input-helper);
+}
+.cardHeaderInstanceParent {
+  width: 1110px;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-lgi);
+  z-index: 2;
+}
+.frameWrapper,
+.landingPageInner,
+.logo21Parent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frameWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.landingPageInner,
+.logo21Parent {
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.logo21Parent {
+  width: 1223px;
+  flex-direction: column;
+  padding: 0 var(--padding-xl) 0 0;
+  gap: var(--gap-43xl);
+}
+.landingPageInner {
+  width: 1388px;
+  flex-direction: row;
+  padding: 0 0 var(--padding-153xl) var(--padding-xl);
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-gainsboro-100);
+  font-family: var(--font-montserrat);
+}
+@media screen and (max-width: 1125px) {
+  .cardHeaderInstance {
+    flex: 1;
+  }
+  .cardHeaderInstanceParent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .loremIpsumDolor {
+    font-size: var(--font-size-7xl);
+    line-height: 37px;
+  }
+  .cardHeaderInstance,
+  .formField {
+    min-width: 100%;
+  }
+  .formField {
+    padding-left: var(--padding-4xl);
+    padding-right: var(--padding-4xl);
+    box-sizing: border-box;
+  }
+  .logo21Parent {
+    gap: 31px 62px;
+  }
+  .landingPageInner {
+    padding-bottom: var(--padding-93xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header,
+  .loremIpsumDolor {
+    font-size: var(--font-size-lgi);
+    line-height: 27px;
+  }
+  .header {
+    line-height: 26px;
+  }
+  .formField {
+    padding-top: var(--padding-15xl);
+    padding-bottom: var(--padding-15xl);
+    box-sizing: border-box;
+  }
+  .logo21Parent {
+    gap: 15px 62px;
+  }
+}
