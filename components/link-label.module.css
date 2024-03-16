@@ -108,6 +108,13 @@
   box-sizing: border-box;
   min-width: 235px;
   max-width: 100%;
+  padding-left: 12px;
+  font-size: 16px;
+  color: white;
+}
+
+.frameItem::placeholder {
+  color: white;
 }
 .maskedIcon {
   height: 22px;
@@ -184,21 +191,25 @@
   max-width: 100%;
 }
 .frameContainer {
+  position:relative;
   height: 42px;
   width: 349px;
   border-radius: var(--br-5xs);
   background-color: var(--color-gray-400);
   border: 1px solid var(--color-gray-1500);
   box-sizing: border-box;
-  overflow: hidden;
   flex-shrink: 0;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   padding: var(--padding-4xs) var(--padding-3xl) var(--padding-4xs)
     var(--padding-xl);
   gap: var(--gap-xl);
   color: var(--color-darkgray-100);
+  line-height: 0;
+  font-size: 18px;
 }
+
 .frameParent,
 .linkLabel {
   align-self: stretch;
@@ -216,7 +227,6 @@
     rgba(31, 53, 75, 0.7),
     rgba(8, 13, 18, 0.7)
   );
-  overflow: hidden;
   flex-direction: column;
   padding: var(--padding-5xl);
   box-sizing: border-box;
