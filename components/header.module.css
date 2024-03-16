@@ -23,19 +23,19 @@
   flex-direction: column;
   padding: var(--padding-11xs) 0 0;
 }
+.frameContainer,
 .schoolsWrapper,
-.ubuildingurssinterface,
-.ubuildingurssinterfaceWrapper {
+.ubuildingParent {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.ubuildingurssinterface {
+.ubuildingParent {
   flex: 1;
   flex-direction: row;
   gap: var(--gap-5xs);
 }
-.ubuildingurssinterfaceWrapper {
+.frameContainer {
   height: 35px;
   flex-direction: column;
   padding: var(--padding-2xs) 0 0;
@@ -61,7 +61,7 @@
   padding: var(--padding-11xs) 0 0;
 }
 .deviceWrapper,
-.lOGORECTInner,
+.frameDiv,
 .urssInterfaceParent {
   display: flex;
   align-items: flex-start;
@@ -72,7 +72,7 @@
   flex-direction: row;
   gap: var(--gap-5xs);
 }
-.lOGORECTInner {
+.frameDiv {
   height: 35px;
   flex-direction: column;
   padding: var(--padding-2xs) 0 0;
@@ -108,7 +108,7 @@
 }
 .ellipseParent,
 .fichevronDownWrapper,
-.lOGORECT {
+.frameParent {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -120,32 +120,28 @@
   box-sizing: border-box;
 }
 .ellipseParent,
-.lOGORECT {
+.frameParent {
   align-self: stretch;
   flex-direction: row;
 }
 .ellipseParent {
+  position: relative;
   width: 196px;
   gap: var(--gap-xs);
   font-family: var(--font-noto-sans);
 }
-.lOGORECT {
-  margin: 0;
+.frameParent {
   flex: 1;
   gap: var(--gap-28xl);
-  text-align: left;
-  font-size: var(--font-size-base);
-  color: var(--color-gainsboro-100);
-  font-family: var(--font-montserrat);
 }
-.lOGORECTWrapper,
+.frameWrapper,
 .logo21Parent {
   box-sizing: border-box;
   display: flex;
   align-items: flex-start;
   max-width: 100%;
 }
-.lOGORECTWrapper {
+.frameWrapper {
   height: 47px;
   width: 477px;
   flex-direction: column;
@@ -166,20 +162,47 @@
   z-index: 99;
   position: sticky;
   gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-gainsboro-100);
+  font-family: var(--font-montserrat);
 }
-@media screen and (max-width: 925px) {
+.dropdown {
+  position: absolute;
+  top: 50px; /* Position the dropdown right below the ellipseParent */
+  left: 0;
+  background-color: var(--color-gray-600);
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Increase z-index to a high value */
+}
+.frameParent, .frameWrapper, .logo21Parent {
+  overflow: visible; /* Make sure these parent elements do not hide the dropdown */
+}
+
+.dropdown ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown ul li {
+  padding: 12px 16px;
+  text-align: left;
+  background-color: var(--color-gray-600);
+  cursor: pointer;
+}
+
+.dropdown ul li:hover {
+  background-color: var(--color-gray-300);
+}
+@media screen and (max-width: 725px) {
+  .frameParent {
+    gap: 47px 23px;
+  }
   .logo21Parent {
     padding-left: var(--padding-12xl);
     padding-right: var(--padding-12xl);
     box-sizing: border-box;
-  }
-}
-@media screen and (max-width: 700px) {
-  .lOGORECT {
-    display: none;
-    gap: 47px 23px;
-  }
-  .lOGORECTWrapper {
-    width: 0;
   }
 }

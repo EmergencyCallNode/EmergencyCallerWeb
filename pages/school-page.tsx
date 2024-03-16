@@ -1,15 +1,29 @@
 import type { NextPage } from "next";
-import FrameComponent2 from "../components/frame-component2";
+import Header from "../components/header";
+import Footer from "../components/footer";
 import styles from "./school-page.module.css";
+import { useSession, getSession } from "next-auth/react";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
+import { GetServerSideProps } from "next";
 
 const SchoolPage: NextPage = () => {
+  const { data: session, status } = useSession();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (status === "unauthenticated") {
+      router.push("/");
+    }
+  }, [session, status, router]);
+
   return (
-    <div className={styles.schoolPage}>
+    <div className={styles.schoolPage} style={{ maxWidth: "1440px" }}>
       <main className={styles.frameParent}>
-        <FrameComponent2 />
+        <Header />
         <section className={styles.frameWrapper}>
           <div className={styles.nodesParent}>
-            <h3 className={styles.nodes}>Nodes</h3>
+            <h3 className={styles.nodes}>Schools</h3>
             <div className={styles.frameGroup}>
               <div className={styles.rectangleParent}>
                 <img
@@ -139,27 +153,30 @@ const SchoolPage: NextPage = () => {
             </div>
           </div>
         </section>
-        <div className={styles.frameWrapper4}>
-          <div className={styles.dividerParent}>
-            <div className={styles.divider} />
-            <div className={styles.footerTextParent}>
-              <div className={styles.footerText}>
-                © 2024 Company Name. All rights reserved.
-              </div>
-              <div className={styles.footerLinkParent}>
-                <div className={styles.footerLink}>Terms</div>
-                <div className={styles.footerLink1}>Privacy</div>
-                <div className={styles.footerLink2}>Cookies</div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Footer />
       </main>
       <div className={styles.readMoreWrapper}>
         <div className={styles.readMore}>Read More</div>
       </div>
     </div>
   );
+};
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const session = await getSession(context);
+
+  if (!session) {
+    return {
+      redirect: {
+        destination: "/",
+        permanent: false,
+      },
+    };
+  }
+
+  return {
+    props: { session },
+  };
 };
 
 export default SchoolPage;

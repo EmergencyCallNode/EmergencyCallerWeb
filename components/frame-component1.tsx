@@ -1,7 +1,38 @@
 import type { NextPage } from "next";
 import styles from "./frame-component1.module.css";
+import { signIn } from "next-auth/react";
+import { FormEvent } from "react";
+import { useRouter } from "next/router";
 
 const FrameComponent1: NextPage = () => {
+  const router = useRouter();
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const target = event.target as typeof event.target & {
+      email: { value: string };
+      password: { value: string };
+    };
+
+    const email = target.email.value;
+    const password = target.password.value;
+
+    const result = await signIn("credentials", {
+      redirect: false,
+      email,
+      password,
+    });
+
+    console.log(result);
+
+    if (result?.error) {
+      // Handle error messages here
+      console.error(result.error);
+    } else if (result?.ok) {
+      // Redirect to the school page if successful
+      router.push("/school-page");
+    }
+  };
+
   return (
     <section className={styles.landingPageInner}>
       <div className={styles.logo21Parent}>
@@ -38,14 +69,17 @@ const FrameComponent1: NextPage = () => {
                     </div>
                   </div>
                 </div>
-                <form className={styles.cardContent}>
+                <form className={styles.cardContent} onSubmit={handleSubmit}>
                   <div className={styles.form}>
                     <div className={styles.textfield}>
                       <div className={styles.input}>
                         <input
                           className={styles.content1}
                           placeholder="Username"
-                          type="text"
+                          type="email"
+                          id="email"
+                          name="email"
+                          required
                         />
                       </div>
                       <div className={styles.formhelpertext}>
@@ -57,7 +91,10 @@ const FrameComponent1: NextPage = () => {
                         <input
                           className={styles.content2}
                           placeholder="Password"
-                          type="text"
+                          type="password"
+                          id="password"
+                          name="password"
+                          required
                         />
                       </div>
                       <div className={styles.formhelpertext1}>
@@ -65,7 +102,7 @@ const FrameComponent1: NextPage = () => {
                       </div>
                     </div>
                   </div>
-                  <button className={styles.button}>
+                  <button className={styles.button} type="submit">
                     <div className={styles.base}>
                       <img
                         className={styles.maskedIcon}

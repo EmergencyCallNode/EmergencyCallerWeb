@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
-import FrameComponent2 from "../components/frame-component2";
+import FrameComponent2 from "../components/header";
 import LinkLabel from "../components/link-label";
-import FrameComponent5 from "../components/frame-component5";
+import Footer from "../components/footer";
 import styles from "./device-console-page.module.css";
 
 const DeviceConsolePage: NextPage = () => {
   return (
-    <div className={styles.deviceConsolePage}>
+    <div className={styles.deviceConsolePage} style={{ maxWidth: "1440px" }}>
       <main className={styles.topLogo}>
         <FrameComponent2 />
         <section className={styles.topLogoInner}>
@@ -15,7 +15,7 @@ const DeviceConsolePage: NextPage = () => {
             <LinkLabel fichevronDown="/fichevrondown-1.svg" />
           </div>
         </section>
-        <FrameComponent5 />
+        <Footer />
       </main>
       <div className={styles.readMoreWrapper}>
         <div className={styles.readMore}>Read More</div>

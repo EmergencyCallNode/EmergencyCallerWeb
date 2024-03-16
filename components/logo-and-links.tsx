@@ -101,9 +101,24 @@ const LogoAndLinks: NextPage = () => {
                 © 2024 Company Name. All rights reserved.
               </div>
               <div className={styles.footerLinkParent}>
-                <div className={styles.footerLink3}>Terms</div>
-                <div className={styles.footerLink4}>Privacy</div>
-                <div className={styles.footerLink5}>Cookies</div>
+                <div
+                  className={styles.footerLink3}
+                  style={{ cursor: "pointer" }}
+                >
+                  Terms
+                </div>
+                <div
+                  className={styles.footerLink4}
+                  style={{ cursor: "pointer" }}
+                >
+                  Privacy
+                </div>
+                <div
+                  className={styles.footerLink5}
+                  style={{ cursor: "pointer" }}
+                >
+                  Cookies
+                </div>
               </div>
             </div>
           </div>

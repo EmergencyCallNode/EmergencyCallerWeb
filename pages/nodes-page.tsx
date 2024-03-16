@@ -1,13 +1,13 @@
 import type { NextPage } from "next";
-import FrameComponent4 from "../components/frame-component4";
-import FrameComponent3 from "../components/frame-component3";
+import Header from "../components/header";
+import Footer from "../components/footer";
 import styles from "./nodes-page.module.css";
 
 const NodesPage: NextPage = () => {
   return (
-    <div className={styles.nodesPage}>
+    <div className={styles.nodesPage} style={{ maxWidth: "1440px" }}>
       <main className={styles.frameParent}>
-        <FrameComponent4 />
+        <Header />
         <section className={styles.frameWrapper}>
           <div className={styles.nodesParent}>
             <h3 className={styles.nodes}>Nodes</h3>
@@ -75,7 +75,7 @@ const NodesPage: NextPage = () => {
             </div>
           </div>
         </section>
-        <FrameComponent3 />
+        <Footer />
       </main>
       <div className={styles.colorPicker}>
         <div className={styles.readMore}>Read More</div>

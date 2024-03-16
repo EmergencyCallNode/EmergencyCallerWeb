@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import FrameComponent2 from "../components/frame-component2";
+import Header from "../components/header";
 import LinkLabel from "../components/link-label";
 import styles from "./device-console-page1.module.css";
 
@@ -7,7 +7,7 @@ const DeviceConsolePage1: NextPage = () => {
   return (
     <div className={styles.deviceConsolePage}>
       <main className={styles.frameParent}>
-        <FrameComponent2 />
+        <Header />
         <section className={styles.frameWrapper}>
           <div className={styles.frameGroup}>
             <div className={styles.frameContainer}>
@@ -85,9 +85,24 @@ const DeviceConsolePage1: NextPage = () => {
                   © 2024 Company Name. All rights reserved.
                 </div>
                 <div className={styles.footerLinkParent}>
-                  <div className={styles.footerLink}>Terms</div>
-                  <div className={styles.footerLink1}>Privacy</div>
-                  <div className={styles.footerLink2}>Cookies</div>
+                  <div
+                    className={styles.footerLink}
+                    style={{ cursor: "pointer" }}
+                  >
+                    Terms
+                  </div>
+                  <div
+                    className={styles.footerLink1}
+                    style={{ cursor: "pointer" }}
+                  >
+                    Privacy
+                  </div>
+                  <div
+                    className={styles.footerLink2}
+                    style={{ cursor: "pointer" }}
+                  >
+                    Cookies
+                  </div>
                 </div>
               </div>
             </footer>
