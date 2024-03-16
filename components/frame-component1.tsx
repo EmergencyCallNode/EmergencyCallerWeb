@@ -78,6 +78,7 @@ const FrameComponent1: NextPage = () => {
                           placeholder="Username"
                           type="email"
                           id="email"
+                          autoComplete="off"
                           name="email"
                           required
                         />
