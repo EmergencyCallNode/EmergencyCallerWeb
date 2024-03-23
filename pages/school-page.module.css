@@ -123,6 +123,7 @@
   align-items: flex-start;
   justify-content: center;
   max-width: 100%;
+  margin-top: -50px;
 }
 .frameChild1 {
   position: absolute;

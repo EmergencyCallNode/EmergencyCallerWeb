@@ -6,6 +6,7 @@ import { useSession, getSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { GetServerSideProps } from "next";
+import GoogleMap from "../components/GoogleMap";
 
 const SchoolPage: NextPage = () => {
   const { data: session, status } = useSession();
@@ -25,7 +26,7 @@ const SchoolPage: NextPage = () => {
           <div className={styles.nodesParent}>
             <h3 className={styles.nodes}>Schools</h3>
             <div className={styles.frameGroup}>
-              <div className={styles.rectangleParent}>
+              {/* <div className={styles.rectangleParent}>
                 <img
                   className={styles.frameChild}
                   alt=""
@@ -149,7 +150,8 @@ const SchoolPage: NextPage = () => {
                     </div>
                   </div>
                 </div>
-              </footer>
+              </footer> */}
+              <GoogleMap />
             </div>
           </div>
         </section>

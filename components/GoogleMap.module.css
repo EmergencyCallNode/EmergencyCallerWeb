@@ -1,0 +1,23 @@
+.markerContainer {
+    display: flex;
+}
+
+.markerNumber {
+    margin-top: -10px;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    background-color: #088608;
+    border-radius: 50%;
+}
+
+.circle p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}

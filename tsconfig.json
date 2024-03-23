@@ -30,7 +30,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "pages/api/auth/[...nextauth].js"
-  ],
+, "components/GoogleMap.jsx"  ],
   "exclude": [
     "node_modules"
   ]
