@@ -26,106 +26,7 @@ const SchoolPage: NextPage = () => {
           <div className={styles.nodesParent}>
             <h3 className={styles.nodes}>Schools</h3>
             <div className={styles.frameGroup}>
-              {/* <div className={styles.rectangleParent}>
-                <img
-                  className={styles.frameChild}
-                  alt=""
-                  src="/rectangle-17434@2x.png"
-                />
-                <img
-                  className={styles.frameItem}
-                  loading="lazy"
-                  alt=""
-                  src="/group-1000008452.svg"
-                />
-                <div className={styles.frameContainer}>
-                  <div className={styles.frameDiv}>
-                    <div className={styles.polygonParent}>
-                      <img
-                        className={styles.frameInner}
-                        loading="lazy"
-                        alt=""
-                        src="/polygon-2.svg"
-                      />
-                      <button
-                        className={styles.washingtonInternationalSchooWrapper}
-                      >
-                        <div
-                          className={styles.washingtonInternationalSchoo}
-                        >{`Washington International School `}</div>
-                      </button>
-                    </div>
-                    <div className={styles.frameWrapper1}>
-                      <div className={styles.ellipseParent}>
-                        <div className={styles.ellipseDiv} />
-                        <div className={styles.div}>9</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className={styles.frameParent1}>
-                  <div className={styles.frameWrapper2}>
-                    <div className={styles.frameParent2}>
-                      <div className={styles.frameWrapper3}>
-                        <div className={styles.ellipseGroup}>
-                          <div className={styles.frameChild1} />
-                          <div className={styles.div1}>5</div>
-                        </div>
-                      </div>
-                      <div className={styles.polygonGroup}>
-                        <img
-                          className={styles.polygonIcon}
-                          loading="lazy"
-                          alt=""
-                          src="/polygon-2-1.svg"
-                        />
-                        <div className={styles.janneyElementarySchoolWrapper}>
-                          <div className={styles.janneyElementarySchool}>
-                            Janney Elementary School
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className={styles.frameParent3}>
-                    <div className={styles.polygonContainer}>
-                      <img
-                        className={styles.frameChild2}
-                        loading="lazy"
-                        alt=""
-                        src="/polygon-2.svg"
-                      />
-                      <button
-                        className={styles.capitalHillClusterSchoolWrapper}
-                      >
-                        <div className={styles.capitalHillCluster}>
-                          Capital Hill Cluster School
-                        </div>
-                      </button>
-                    </div>
-                    <div className={styles.schoollocationWrapper}>
-                      <div className={styles.schoollocation}>
-                        <div className={styles.schoollocationChild} />
-                        <div className={styles.frameParent4}>
-                          <img
-                            className={styles.groupIcon}
-                            loading="lazy"
-                            alt=""
-                            src="/group-1000008452.svg"
-                          />
-                          <div className={styles.div2}>12</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <img
-                  className={styles.frameChild3}
-                  loading="lazy"
-                  alt=""
-                  src="/group-1000008452.svg"
-                />
-              </div>
+              <GoogleMap />
               <footer className={styles.readmorebuttonWrapper}>
                 <div className={styles.readmorebutton}>
                   <div className={styles.ulocationPointParent}>
@@ -150,8 +51,7 @@ const SchoolPage: NextPage = () => {
                     </div>
                   </div>
                 </div>
-              </footer> */}
-              <GoogleMap />
+              </footer>
             </div>
           </div>
         </section>
